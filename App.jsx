@@ -667,27 +667,29 @@ object-fit: contain;
   .ps-bottom-left strong{color:#fff;font-weight:500;}
   .ps-bottom-btns{display:flex;gap:12px;flex-wrap:wrap;}
 
-  .case-card{background:rgba(0,20,10,0.6);border:1px solid rgba(0,180,110,0.18);border-radius:28px;overflow:hidden;transition:transform 0.35s,border-color 0.3s,box-shadow 0.3s;}
-  .case-card:hover{transform:translateY(-8px);border-color:rgba(0,212,125,0.4);box-shadow:0 24px 60px rgba(0,96,57,0.25);}
-  .case-header{padding:28px 28px 0;display:flex;align-items:center;gap:14px;margin-bottom:24px;flex-wrap:wrap;}
-  .case-icon{font-size:2.2rem;width:56px;height:56px;display:flex;align-items:center;justify-content:center;background:rgba(0,96,57,0.2);border:1px solid rgba(0,180,110,0.2);border-radius:16px;flex-shrink:0;}
-  .case-biz{font-family:'Poppins',sans-serif;font-weight:500;font-size:1.05rem;color:#fff;margin-bottom:2px;}
+  .case-card{background:rgba(0,20,10,0.75);border:1px solid rgba(0,180,110,0.22);border-radius:32px;overflow:hidden;transition:transform 0.35s,border-color 0.3s,box-shadow 0.3s;box-shadow:0 8px 32px rgba(0,0,0,0.35);}
+  .case-card:hover{transform:translateY(-10px);border-color:rgba(0,212,125,0.5);box-shadow:0 28px 72px rgba(0,96,57,0.35);}
+  .case-header{padding:32px 32px 0;display:flex;align-items:center;gap:16px;margin-bottom:28px;flex-wrap:wrap;}
+  .case-icon{font-size:2.4rem;width:62px;height:62px;display:flex;align-items:center;justify-content:center;background:rgba(0,96,57,0.25);border:1px solid rgba(0,180,110,0.3);border-radius:18px;flex-shrink:0;box-shadow:0 0 20px rgba(0,180,110,0.15);}
+  .case-biz{font-family:'Poppins',sans-serif;font-weight:700;font-size:1.1rem;color:#fff;margin-bottom:4px;}
   .case-loc{font-size:0.8rem;color:#8ab09a;}
-  .case-tag{padding:4px 14px;border-radius:99px;background:rgba(0,180,110,0.12);border:1px solid rgba(0,180,110,0.25);font-size:0.72rem;font-weight:500;color:var(--g4);text-transform:uppercase;letter-spacing:0.08em;margin-left:auto;}
+  .case-tag{padding:5px 16px;border-radius:99px;background:rgba(0,180,110,0.15);border:1px solid rgba(0,180,110,0.3);font-size:0.72rem;font-weight:600;color:var(--g4);text-transform:uppercase;letter-spacing:0.1em;margin-left:auto;}
   .before-after-grid{display:grid;grid-template-columns:1fr 1fr;}
-  .before-panel{padding:20px 28px 28px;background:rgba(180,30,30,0.06);border-top:1px solid rgba(220,60,60,0.12);border-right:1px solid rgba(0,180,110,0.1);}
-  .after-panel{padding:20px 28px 28px;background:rgba(0,96,57,0.07);border-top:1px solid rgba(0,180,110,0.18);}
-  .panel-label{font-family:'Poppins',sans-serif;font-weight:800;font-size:0.7rem;letter-spacing:0.15em;text-transform:uppercase;margin-bottom:16px;display:flex;align-items:center;gap:6px;}
+  .before-panel{padding:24px 32px 32px;background:rgba(200,40,40,0.09);border-top:1px solid rgba(220,60,60,0.2);border-right:1px solid rgba(0,180,110,0.1);}
+  .after-panel{padding:24px 32px 32px;background:rgba(0,110,60,0.11);border-top:1px solid rgba(0,180,110,0.28);}
+  .panel-label{font-family:'Poppins',sans-serif;font-weight:800;font-size:0.72rem;letter-spacing:0.15em;text-transform:uppercase;margin-bottom:18px;display:flex;align-items:center;gap:6px;}
   .panel-label.before{color:#e05555;}
   .panel-label.after{color:var(--g4);}
-  .metric-row{display:flex;justify-content:space-between;align-items:center;padding:6px 0;border-bottom:1px solid rgba(255,255,255,0.04);}
+  .metric-row{display:flex;justify-content:space-between;align-items:center;padding:9px 0;border-bottom:1px solid rgba(255,255,255,0.05);}
   .metric-row:last-child{border-bottom:none;}
-  .metric-key{font-size:0.75rem;color:#8ab09a;}
-  .metric-val-before{font-size:0.82rem;font-weight:600;color:#d07070;}
-  .metric-val-after{font-size:0.82rem;font-weight:700;color:var(--g4);}
-  .case-footer{padding:18px 28px;background:rgba(0,180,110,0.06);border-top:1px solid rgba(0,180,110,0.12);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;}
-  .case-result{font-family:'Poppins',sans-serif;font-weight:600;font-size:0.92rem;color:var(--g4);}
-  .case-time{font-size:0.78rem;color:#8ab09a;background:rgba(0,96,57,0.15);border:1px solid rgba(0,180,110,0.2);border-radius:99px;padding:4px 14px;}
+  .metric-row.highlight .metric-val-before{font-size:1.05rem;font-weight:800;color:#f08080;}
+  .metric-row.highlight .metric-val-after{font-size:1.05rem;font-weight:800;color:#00e87a;}
+  .metric-key{font-size:0.76rem;color:#7aa090;}
+  .metric-val-before{font-size:0.88rem;font-weight:700;color:#e07070;}
+  .metric-val-after{font-size:0.88rem;font-weight:800;color:var(--g4);}
+  .case-footer{padding:20px 32px;background:rgba(0,180,110,0.07);border-top:1px solid rgba(0,180,110,0.15);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;}
+  .case-result{font-family:'Poppins',sans-serif;font-weight:700;font-size:0.95rem;color:var(--g4);}
+  .case-time{font-size:0.78rem;color:#8ab09a;background:rgba(0,96,57,0.18);border:1px solid rgba(0,180,110,0.25);border-radius:99px;padding:5px 16px;}
 
   .testi-card{background:rgba(0,20,10,0.6);border:1px solid rgba(0,180,110,0.16);border-radius:24px;padding:28px 24px;transition:transform 0.3s,border-color 0.3s,box-shadow 0.3s;}
   .testi-card:hover{transform:translateY(-6px);border-color:rgba(0,212,125,0.35);box-shadow:0 20px 50px rgba(0,96,57,0.25);}
@@ -1046,13 +1048,13 @@ function CaseCard({ cs }) {
         <div className="before-panel">
           <p className="panel-label before">✕ Before</p>
           {[["Map Rank", cs.before.rank], ["Reviews", cs.before.reviews], ["Monthly Calls", cs.before.calls], ["Visibility", cs.before.visibility], ["Profile Score", cs.before.profileScore]].map(([k, v], i) => (
-            <div className="metric-row" key={i}><span className="metric-key">{k}</span><span className="metric-val-before">{v}</span></div>
+            <div className={`metric-row${i === 0 ? " highlight" : ""}`} key={i}><span className="metric-key">{k}</span><span className="metric-val-before">{v}</span></div>
           ))}
         </div>
         <div className="after-panel">
           <p className="panel-label after">✓ After</p>
           {[["Map Rank", cs.after.rank], ["Reviews", cs.after.reviews], ["Monthly Calls", cs.after.calls], ["Visibility", cs.after.visibility], ["Profile Score", cs.after.profileScore]].map(([k, v], i) => (
-            <div className="metric-row" key={i}><span className="metric-key">{k}</span><span className="metric-val-after">{v}</span></div>
+            <div className={`metric-row${i === 0 ? " highlight" : ""}`} key={i}><span className="metric-key">{k}</span><span className="metric-val-after">{v}</span></div>
           ))}
         </div>
       </div>
@@ -1257,6 +1259,10 @@ export default function GmbPage() {
   useCursorGlow();
   const allLogos = [...clientLogos, ...clientLogos];
 
+  const deadlineDate = new Date();
+  deadlineDate.setDate(deadlineDate.getDate() + 30);          // change date logic 
+  const deadlineStr = deadlineDate.toLocaleDateString("en-IN", { day: "numeric", month: "long" });
+
   return (
     <>
       <style>{globalCSS}</style>
@@ -1266,7 +1272,7 @@ export default function GmbPage() {
         {/* TOP BAR */}
         <div className="top-bar">
           <span className="top-bar-pill">🔥 Limited</span>
-          <span className="top-bar-text">Free GMB Audit offer closes 31st March — Only 4 spots remaining. Claim Yours</span>
+          <span className="top-bar-text">Free GMB Audit offer closes {deadlineStr} — Only 4 spots remaining. Claim Yours</span>
           <a href="#audit-form" className="top-bar-cta">Claim Now →</a>
         </div>
 
@@ -1306,7 +1312,13 @@ export default function GmbPage() {
 
         <div className="divider" />
 
-        {/* FOUNDER SECTION - Full Width */}
+
+
+
+
+        {/* hide founder section according to 5th task */}
+
+        {/* FOUNDER SECTION - Full Width 
 
         
         <section className="founder-fw-section">
@@ -1341,6 +1353,9 @@ export default function GmbPage() {
         </section>
 
         <div className="divider" />
+        */}
+
+
 
         {/* STATS */}
         <section className="stats-section">
@@ -1428,12 +1443,9 @@ export default function GmbPage() {
               <h2 className="section-title reveal">Before &amp; After — <span style={{ background: "linear-gradient(135deg,#00b86e,#f0c95e)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>GMB Profiles We Fixed</span></h2>
               <p className="section-desc reveal">Real businesses. Real numbers.</p>
             </div>
-            <div className="stagger">
-<img src={Before} alt="" />
-            </div>
-            {/* <div className="grid-3 stagger">
+            <div className="grid-3 stagger">
               {caseStudies.map((cs, i) => <CaseCard key={i} cs={cs} />)}
-            </div> */}
+            </div>
           </div>
         </section>
 
@@ -1517,7 +1529,7 @@ export default function GmbPage() {
             <div>
               <div className="booking-strip-badge"><span>📅</span> Limited Availability</div>
               <h3 className="booking-strip-heading">
-                Free audit available until 31st March only.<br />
+                Free audit available until {deadlineStr} only.<br />
                 <span style={{ color: "var(--g4)" }}>Book 1:1 Call Now.</span>
               </h3>
               <p className="booking-strip-sub">Only 4 spots remaining — Don't miss out</p>
