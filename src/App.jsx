@@ -1313,7 +1313,6 @@ export default function GmbPage() {
 
         <div className="divider" />
 
-
         {/* FOUNDER SECTION */}
         <section className="founder-fw-section">
           <div className="founder-fw-inner">
