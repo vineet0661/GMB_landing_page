@@ -12,6 +12,7 @@ import image5 from './assets/Launspace-logo-306x70-Red-rc6hnnzaamwjo6vc6hahpiz7f
 import image6 from './assets/Logo-Oviyam-1-1024x398.webp';
 import Raushan from './assets/Raushan_saxena-removebg-preview.png'
 
+
 import bg1 from './assets/1.png';
 import bg2 from './assets/2.png';
 import bg3 from './assets/3.png';
