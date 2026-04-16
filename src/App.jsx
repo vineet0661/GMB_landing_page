@@ -323,7 +323,7 @@ const globalCSS = `
   @keyframes ringPulse{0%{transform:scale(1);opacity:0.4;}100%{transform:scale(1.5);opacity:0;}}
   .gmb-hero-inner{position:relative;z-index:2;max-width:1400px;margin:0 auto;padding:28px 24px;width:100%;}
   .hero-grid{display:grid;gap:32px;align-items:start;}
-  @media(min-width:900px){.hero-grid{grid-template-columns:1.2fr 1fr 1fr;}}
+  @media(min-width:900px){.hero-grid{grid-template-columns:1.2fr 1fr 1fr;align-items:stretch;}}
   .gmb-hero h1{font-family:'Poppins',sans-serif;font-size:clamp(2.8rem,3.5vw,5rem);font-weight:900;line-height:1.05;letter-spacing:-0.03em;color:#fff;margin:24px 0;}
   .hero-sub{font-size:1.1rem;color:#a3c4b0;line-height:1.7;margin-bottom:24px;}
   .trust-row{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:24px;}
@@ -336,7 +336,7 @@ const globalCSS = `
   .btn-whatsapp{display:inline-flex;align-items:center;gap:10px;background:rgba(37,211,102,0.12);border:1.5px solid rgba(37,211,102,0.35);color:#25d366;padding:16px 36px;border-radius:99px;font-family:'Poppins',sans-serif;font-weight:600;font-size:1rem;cursor:pointer;text-decoration:none;transition:background 0.2s,border-color 0.2s,transform 0.2s;}
   .btn-whatsapp:hover{background:rgba(37,211,102,0.2);border-color:rgba(37,211,102,0.6);transform:translateY(-2px);}
 
-  .form-card{background:rgba(0,30,15,0.7);border:1px solid rgba(0,180,110,0.22);backdrop-filter:blur(24px);border-radius:28px;padding:28px 28px;box-shadow:0 32px 80px rgba(0,0,0,0.4),0 0 0 1px rgba(0,180,110,0.08);text-align:left;}
+  .form-card{background:rgba(0,30,15,0.7);border:1px solid rgba(0,180,110,0.22);backdrop-filter:blur(24px);border-radius:28px;padding:28px 28px;box-shadow:0 32px 80px rgba(0,0,0,0.4),0 0 0 1px rgba(0,180,110,0.08);text-align:left;flex:1;}
   .form-title{font-family:'Poppins',sans-serif;font-weight:700;font-size:1.7rem;margin-bottom:6px;}
   .form-sub{color:#8ab09a;font-size:0.88rem;margin-bottom:28px;}
   .form-group{margin-bottom:16px;}
@@ -373,7 +373,7 @@ const globalCSS = `
   .grid-3{display:grid;gap:24px;} @media(min-width:600px){.grid-3{grid-template-columns:repeat(2,1fr);}} @media(min-width:900px){.grid-3{grid-template-columns:repeat(3,1fr);}}
   .grid-4{display:grid;gap:24px;} @media(min-width:600px){.grid-4{grid-template-columns:repeat(2,1fr);}} @media(min-width:900px){.grid-4{grid-template-columns:repeat(4,1fr);}}
 
-  .gmb-preview{background:rgba(0,20,10,0.65);border:1px solid rgba(0,180,110,0.2);border-radius:20px;padding:24px;margin-top:14px;text-align:left;}
+  .gmb-preview{background:rgba(0,20,10,0.65);border:1px solid rgba(0,180,110,0.2);border-radius:20px;padding:24px;margin-top:14px;text-align:left;flex:1;}
   .gp-label{font-size:0.72rem;color:var(--g3);font-weight:600;letter-spacing:0.12em;text-transform:uppercase;margin-bottom:16px;}
   .gp-card{background:rgba(0,40,20,0.5);border:1px solid rgba(0,180,110,0.15);border-radius:14px;padding:16px 18px;}
   .gp-biz{font-family:'Poppins',sans-serif;font-weight:500;font-size:1rem;color:#fff;margin-bottom:4px;}
@@ -741,7 +741,7 @@ object-fit: contain;
   .cursor-glow{position:fixed;width:400px;height:400px;background:radial-gradient(circle,rgba(0,140,70,0.06),transparent 70%);border-radius:50%;pointer-events:none;z-index:9999;transform:translate(-50%,-50%);transition:left 0.1s ease,top 0.1s ease;}
 
   /* Lead form wrapper */
-  .lead-form-wrapper{display:flex;flex-direction:column;gap:80px;}
+  .lead-form-wrapper{display:flex;flex-direction:column;flex:1;}
 
   /* Founder card (old - kept for compatibility) */
   .founder-section{margin-top:0;}
@@ -1305,8 +1305,8 @@ export default function GmbPage() {
                   <a href="https://wa.me/919911689427" target="_blank" rel="noopener noreferrer" className="btn-whatsapp"><MessageCircle style={{ width: 18, height: 18 }} />WhatsApp Us</a>
                 </div>
               </div>
-              <div className="reveal reveal-delay-3" style={{ alignSelf: "start", marginTop: 0 }}><GmbMockPreview /></div>
-              <div className="reveal reveal-delay-2" style={{ alignSelf: "start", marginTop: 0 }}><LeadForm compact={false} /></div>
+              <div className="reveal reveal-delay-3" style={{ display:"flex", height:"80%" }}><GmbMockPreview /></div>
+              <div className="reveal reveal-delay-2" style={{ display:"flex", height:"80%" }}><LeadForm compact={false} /></div>
             </div>
           </div>
         </section>
@@ -1514,7 +1514,6 @@ export default function GmbPage() {
         </section>
 
         <div className="divider" />
-
         {/* BOOKING STRIP */}
         <div className="booking-strip">
           <div className="booking-strip-inner">
