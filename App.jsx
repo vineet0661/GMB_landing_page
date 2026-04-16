@@ -924,36 +924,7 @@ function LeadForm({ compact = false }) {
   const handleChange = (e) =>
     setFormData({ ...formData, [e.target.name]: e.target.value });
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    setLoading(true);
-    setError("");
-    const source = detectSource();
-    const payload = {
-      name: formData.name.trim(),
-      phone: formData.phone.trim(),
-      business_type: formData.business_type,
-      city: formData.city.trim(),
-      source,
-    };
-    try {
-      const res = await fetch("https://roasbadhao.com/api/lead.php", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(payload),
-      });
-      const data = await res.json();
-      if (data.success) {
-        setSubmitted(true);
-      } else {
-        setError(data.message || "Something went wrong. Please try again.");
-      }
-    } catch (err) {
-      setError("Network error. Please check your connection and try again.");
-    } finally {
-      setLoading(false);
-    }
-  };
+  
 
   if (submitted) return (
     <div style={{ textAlign: "center", padding: "40px 20px" }}>
@@ -973,7 +944,7 @@ function LeadForm({ compact = false }) {
           {compact ? "We'll review your profile and show you exactly what to fix" : "Fill the form and we'll audit your Google Business Profile"}
         </p>
         {error && <div className="form-error">{error}</div>}
-        <form onSubmit={handleSubmit}>
+        <form>
           <div className="form-row">
             <div className="form-group">
               <label className="form-label">Full Name *</label>
